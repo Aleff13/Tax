@@ -2,6 +2,10 @@ index:
     path: /
     controller: App\Controller\Home::homepage
 
-batatinha:
-    path: /batatinha
-    controller: App\Controller\Teste::exibir
+login:
+    path: /login
+    controller: App\Controller\Home::login
+
+consult:
+    path: /consult/{var}
+    controller: App\Controller\Home::consult
