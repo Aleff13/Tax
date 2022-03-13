@@ -1,7 +1,7 @@
-controllers:
-    resource: ../src/Controller/
-    type: annotation
+index: 
+    path: /
+    controller: App\Controller\Home::homepage
 
-kernel:
-    resource: ../src/Kernel.php
-    type: annotation
+batatinha:
+    path: /batatinha
+    controller: App\Controller\Teste::exibir
