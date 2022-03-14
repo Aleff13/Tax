@@ -2,6 +2,11 @@ index:
     path: /home
     controller: App\Controller\Home::homepage
 
+index2: 
+    path: /
+    controller: App\Controller\Home::homepage
+
+
 login:
     path: /login
     controller: App\Controller\Home::login
