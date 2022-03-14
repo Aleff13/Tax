@@ -34,7 +34,9 @@ class Home extends AbstractController{
     public function login(){
 
         return $this->render('Window/login.html.twig', [
+            
             'title' => "Login"
+            
         ]);
 
 
@@ -45,7 +47,19 @@ class Home extends AbstractController{
 
         return $this->render('Window/register.html.twig', [
 
+            'title' => 'register'
+
         ]);
         
+    }
+
+    public function blog(){
+
+        return $this->render('Window/blog.html.twig', [
+
+            'title' => 'blog'
+
+        ]);
+
     }
 }

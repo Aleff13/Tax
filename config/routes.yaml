@@ -14,3 +14,7 @@ login:
 register:
     path: /register
     controller:  App\Controller\Home::register
+
+blog:
+    path: /blog
+    controller: App\Controller\Home::blog
