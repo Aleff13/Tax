@@ -16,23 +16,36 @@ class Home extends AbstractController{
 
         ];
 
-        $users = [
+        $rotas = [
 
-            "aleff",
-            'ingrid',
-            'agatha'
+            "register",
+            'login',
+            'blog'
 
         ];
 
-        return $this->render('homepage/homepage.html.twig', [
+        return $this->render('Window/home.html.twig', [
             'title' => 'Estou vindo do controller',
             'labels' => $labels,
-            'users' => $users
+            'rotas' => $rotas
         ]);
     }
 
     public function login(){
 
-        return new Response("Future page for using ");
+        return $this->render('Window/login.html.twig', [
+            'title' => "Login"
+        ]);
+
+
+    }
+
+    public function register(){
+
+
+        return $this->render('Window/register.html.twig', [
+
+        ]);
+        
     }
 }

@@ -1,11 +1,11 @@
 index: 
-    path: /
+    path: /home
     controller: App\Controller\Home::homepage
 
 login:
     path: /login
     controller: App\Controller\Home::login
 
-consult:
-    path: /consult/{var}
-    controller: App\Controller\Home::consult
+register:
+    path: /register
+    controller:  App\Controller\Home::register

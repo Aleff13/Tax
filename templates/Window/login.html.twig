@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %} Login {% endblock %}
+
+{% block body %}
+
+    <div id="sideText">
+
+        Seus impostos em um só lugar.
+
+        </div>
+
+        <div id="topText">
+
+        Login
+
+    </div>
+
+    <div class="box">
+
+            <form id='form'>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="" aria-required="true">
+
+                <label for="password">Senha</label>
+                <input type="password" name="pass" id="password" placeholder="" aria-required="true" minlength="8">
+
+                <input type="submit" value="Login" id="login" class="btn">
+
+                <hr>
+
+                <p class="footer">Ainda não possui uma conta? <a href="/register">Cadastre-se aqui!</a></p>
+                <!-- <p>Ver emails <a href="view.php">Clique aqui!</a></p> -->                
+            </form>
+
+                
+            
+        </div>
+
+{% endblock %}
