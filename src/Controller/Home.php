@@ -16,9 +16,18 @@ class Home extends AbstractController{
 
         ];
 
+        $users = [
+
+            "aleff",
+            'ingrid',
+            'agatha'
+
+        ];
+
         return $this->render('homepage/homepage.html.twig', [
             'title' => 'Estou vindo do controller',
-            'labels' => $labels
+            'labels' => $labels,
+            'users' => $users
         ]);
     }
 
