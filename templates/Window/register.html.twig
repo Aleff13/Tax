@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %} Register {% endblock %}
+
+{% block body %}
+
+    <div id="sideText">
+
+        Seus impostos em um só lugar.
+
+        </div>
+
+        <div id="topText">
+
+        Cadastro
+
+        </div>
+
+        <div class="box">
+
+            <form>
+
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="" >
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="" >
+
+                <label for="password">Senha</label>
+                <input type="password" name="pass" id="pass" placeholder="" minlength="8">
+
+                <input type="submit" value="Cadastrar" id="login" class="btn">
+
+                
+
+                <p class="footer">Já possui uma conta? <a href="/login">Faça seu login aqui!</a></p>
+                
+            </form>
+
+        </div>
+
+{% endblock %}

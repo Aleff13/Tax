@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+            <link rel='stylesheet' href='/css/home.css'>
+        {% endblock %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+    <div id="sideText">
+
+        Seja bem-vindo a sua plataforma de impostos.
+
+        </div>
+        <div class="box">
+        <div>
+
+            <ul>
+            
+                {% for rota in rotas %}
+
+                    <input type='button' class = 'rotas' id='{{ rota }}' onclick="window.location.href = '{{ rota }}'" value='{{ rota }}' />
+
+                {% endfor %}
+
+            </ul>
+
+        </div>
+        </div>
+
+        
+    </div>
+
+{% endblock %}

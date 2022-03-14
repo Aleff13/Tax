@@ -1,0 +1,50 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+            <link rel='stylesheet' href='/css/blog.css'>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        {% endblock %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block body %}
+    
+    <header id="header">
+        <div class="feat">
+            <i class="material-icons" id="switch">brightness_6</i>
+        </div>
+        <div class="container">
+            <h1>
+                Your favorite platform for work with tax.
+            </h1>
+            <p>This app will change your life!</p>
+            
+            <input type="button" value="Download Now" class="btn" id="btnDownload" onclick="window.location.href = 'https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40aleff.resler/icmsSt-6430111ffb2f489bbce0d7d383c161d0-signed.apk'">
+            
+            <br>
+            
+            <input type='button' class = 'btn' onclick="window.location.href = 'home'" value='Home' /> 
+
+        </div>
+    </header>
+    <section class="quote">
+        <p>Tax supported:
+            <br>
+            <p class="Text">
+                ICMS-ST <br>
+                ISS <br>
+                IRRF
+            </p>
+        </p>
+    </section>
+    <footer id="footer">
+
+        <i class="material-icons" id="icon">share</i>
+        <i class="material-icons" id="icon">contact_phone</i>
+        <i class="material-icons" id="icon">hearing</i>
+        <i class="material-icons" id="icon">favorite</i>
+        
+    </footer>
+
+{% endblock %}

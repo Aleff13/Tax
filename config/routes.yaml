@@ -1,7 +1,20 @@
 index: 
+    path: /home
+    controller: App\Controller\Home::homepage
+
+index2: 
     path: /
     controller: App\Controller\Home::homepage
 
-batatinha:
-    path: /batatinha
-    controller: App\Controller\Teste::exibir
+
+login:
+    path: /login
+    controller: App\Controller\Home::login
+
+register:
+    path: /register
+    controller:  App\Controller\Home::register
+
+blog:
+    path: /blog
+    controller: App\Controller\Home::blog
